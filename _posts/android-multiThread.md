@@ -6,7 +6,6 @@ tags:
 categories:
     - Android
 ---
-
 当我们需要执行一些耗时操作，比如说发起一条网络请求时，服务器未必会立即响应我们的请求。如果不将这类操作放在子线程里去执行，就会导致主线程被阻塞住。从而影响用户对软件的正常使用
 
 <!--more-->
@@ -100,19 +99,19 @@ new Thread(new Runnable(){
 ```
 
 关于以上这段代码的解释如下
-<img src="android-multiThread/messageHandler.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-multiThread/messageHandler.png)
 
 ### 异步消息处理机制
-<img src="android-multiThread/async1.jpg" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-multiThread/async1.jpg)
 再过一遍
-<img src="android-multiThread/async2.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-multiThread/async2.png)
 #### 安卓的AsyncTask
 AsyncTask简介
-<img src="android-multiThread/asynctask1.png" width="100%"/>
+
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-multiThread/asynctask1.png)
 
 一个具体的AsyncTask例子
-<img src="android-multiThread/asynctask2.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-multiThread/asynctask2.png)
 
 关于上面这段代码的解释
-<img src="android-multiThread/asynctask3.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-multiThread/asynctask3.png)

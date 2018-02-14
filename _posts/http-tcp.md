@@ -29,7 +29,7 @@ TCP协议头部有很多字段，具体的格式很容易找到。与本文关�
 
 ## 三次握手和四次分手的过程
 
-<img src="tcp.jpg" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/http-tcp/tcp.jpg)
 
 举个比较具体的例子
 ### 三次握手

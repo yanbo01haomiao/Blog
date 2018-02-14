@@ -66,4 +66,4 @@ queue.processNextMessage();
 
 以下面一张被引用很多次的图来结束本篇
 
-<img src="eventloop.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/js-eventloop/eventloop.png)

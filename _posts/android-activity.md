@@ -6,7 +6,6 @@ tags:
 categories:
     - Android
 ---
-
 本篇是Android四大组件之一的Activity一些基本的操作，Activity的生命周期。以及Intent，Activity间的数据传递的一些基本介绍。
 
 <!-- more -->
@@ -127,8 +126,7 @@ button1.setOnClickListener(new View.OnClickListener(){
     }
 })
 ```
-<img src="android-activity/ysIntent.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-activity/ysIntent.png)
 在AndroidManifest.xml中修改ThirdActivity的intent-filter
 
 **AndroidManifest.xml**
@@ -156,7 +154,7 @@ button1.setOnClickListener(new View.OnClickListener(){
 })
 ```
 就会让我们在Browser和ActivityTest(含有ThirdActivity这个Activity的app)中二选一
-<img src="android-activity/httpIntent.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-activity/httpIntent.png)
 
 除了http以外还有很多协议，geo表示显示地理位置，tel表示拨打电话
 ```java
@@ -258,21 +256,20 @@ protected void OnActivityResult(int requestCode,int resultCode,Intent data){
 ```
 
 关于onActivityResult()
-  <img src="android-activity/onActivityResult.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-activity/onActivityResult.png)
 
 
 ## Activity的生命周期
 
 #### 活动状态
 
-<img src="android-activity/activityState.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-activity/activityState.png)
 
 #### 生命周期钩子
-<img src="android-activity/activityHooks.png" width="100%"/>
-<img src="android-activity/activityHooks2.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-activity/activityHooks.png)
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-activity/activityHooks2.png)
 #### 生命周期图
-<img src="android-activity/lifecycle.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-activity/lifecycle.png)
 
 ### onSaveInstanceState()
 Activity提供了一个onSaveInstanceState()回调方法，这个方法它可以保证活动在被回收之前一定会被调用。用来保存要被回收的活动的一些重要数据

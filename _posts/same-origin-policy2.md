@@ -200,7 +200,3 @@ win.postMessage(JSON.stringify({key: 'storage', data: obj}), 'http://cai.com');
 [浏览器同源政策及其规避方法 by阮一峰](http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html)
 [新手学跨域之iframe by亦秋](https://segmentfault.com/a/1190000000702539)
 [MDN postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage)
-
-
-前两篇文章一直都没有提到跨域的重头戏ajax,将在下一篇中讲解
-{% post_link same-origin-policy3 浏览器同源策略-跨域Ajax%}

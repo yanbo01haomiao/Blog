@@ -40,5 +40,4 @@ categories:
 ...背包问题
 
 ### 贪心选择与动态规划方法的区别
-
-<img src="algo-greedy/greedy0.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/algo-greedy/greedy0.png)

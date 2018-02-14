@@ -34,7 +34,7 @@ categories:
 
 ## 备忘录方法
 
-<img src="algo-dp/dp0.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/algo-dp/dp0.png)
 
 ### 以上这个算法的分析
 首先先查看m[i][j]这个的值，如果已经存在了就直接返回 避免重复计算//解决重叠子问题
@@ -70,4 +70,5 @@ return u;
 
 #### 两种方法应用方面的比较
 
-<img src="algo-dp/dp1.png" width="100%"/>
+
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/algo-dp/dp1.png)

@@ -16,58 +16,53 @@ Android系统中提供了3种方式用于简单地实现数据持久化，分别
 #### 存
 
 **简介**
-<img src="android-localdata/fileintro.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/fileintro.png)
 **文件存储示例**
-<img src="android-localdata/file1.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/file1.png)
 **以上代码解释**
-<img src="android-localdata/file2.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/file2.png)
 #### 取
 **简介**
-<img src="android-localdata/file3.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/file3.png)
 **从文件中读取数据示例**
-<img src="android-localdata/file4.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/file4.png)
 **以上代码的解释**
-<img src="android-localdata/file5.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/file5.png)
 
 ### SharedPreferences存储
 *感觉和web浏览器的localStroage类似*
 
 **简介**
-<img src="android-localdata/sp0.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sp0.png)
 #### Android中提供了3种方法来用于得到SharedPreferences对象
-<img src="android-localdata/sp1.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sp1.png)
 
 **第一种方法来存储数据到SharedPreferences**
-<img src="android-localdata/sp2.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sp2.png)
 
 **SharedPreferences是使用XML格式来对数据进行管理的**
-<img src="android-localdata/sp3.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sp3.png)
 
 **存储完之后从SharedPreferences中读取数据**
-<img src="android-localdata/sp4.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sp4.png)
 
 **对以上代码的解释**
-<img src="android-localdata/sp5.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sp5.png)
 可使用SharedPreferences来实现记住密码的功能
 
 ### SQLite数据库存储
 
 #### 安卓为什么需要一个本地的关系型数据库？
-<img src="android-localdata/sqlite0.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite0.png)
 
 #### 安卓的SQLiteOpenHelper帮助类
 **一些理论知识**
-<img src="android-localdata/sqlite1.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite1.png)
 **首先建立一个MyDatabaseHelper类去继承SQLiteOpenHelper（我们必须有自己的帮助类）**
-<img src="android-localdata/sqlite2.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite2.png)
 在onCreate()方法中调用了execSQL()这样能保证在数据库创建完成的同时还能成功创建Book表
 **调用创建数据库的方法**
-<img src="android-localdata/sqlite3.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite3.png)
 关键的代码是使用
 private MyDatabaseHelper dbHelper
 得到一个实例
@@ -79,42 +74,37 @@ new MyDatabaseHelper(this,"BookStore.db",null,1)
 **升级数据库**
 //比如想往数据库再新增一张表
 修改MyDatabaseHelper（加粗是修改的内容）
-<img src="android-localdata/sqlite4.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite4.png)
 **以上代码的解释**
-<img src="android-localdata/sqlite5.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite5.png)
 
 修改完MyDatabaseHelper之后就是想办法让onUpgrade()方法执行了
-<img src="android-localdata/sqlite6.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite6.png)
 **关键点:**数据库版本号是2，这时候就会new这个操作就会调用onUpgrade()
 
 **添加数据**
-<img src="android-localdata/sqlite7.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite7.png)
 #### SQLiteDatabase中提供了insert()update()delete()query()
 
 ##### insert()
-<img src="android-localdata/sqlite8.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite8.png)
 
 **以上代码的解释**
-<img src="android-localdata/sqlite9.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite9.png)
 ##### update()
-<img src="android-localdata/sqlite10.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite10.png)
 **以上代码的解释**
-<img src="android-localdata/sqlite11.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite11.png)
 ##### delete()
-<img src="android-localdata/sqlite12.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite12.png)
 **以上代码的解释**
-<img src="android-localdata/sqlite13.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite13.png)
 ##### query()
-<img src="android-localdata/sqlite14.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite14.png)
 **query示例**
-<img src="android-localdata/sqlite15.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite15.png)
 **以上代码的解释**
-<img src="android-localdata/sqlite16.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-localdata/sqlite16.png)
 
 #### 使用LitePal操作数据库
 LitePal是一款开源的Android数据库框架，采用了ORM的模式

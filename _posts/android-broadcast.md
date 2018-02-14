@@ -17,25 +17,22 @@ intent
 Broadcast Receiver
 
 ### 安卓中广播的两种类型：标准广播、有序广播
-<img src="android-broadcast/2kindbr.jpg" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/2kindbr.jpg)
 
 ### 接收系统广播
-<img src="android-broadcast/sysbr.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/sysbr.png)
 #### 动态注册监听网络变化
-<img src="android-broadcast/sysbr1.jpg" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/sysbr1.jpg)
 
 #### 动态注册java
 
-<img src="android-broadcast/sysbr2.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/sysbr2.png)
 **以上代码的解释如下**
 
-<img src="android-broadcast/sysbr3.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/sysbr3.png)
 **同时以下代码还使用了获得系统服务的实例**
 
-<img src="android-broadcast/sysbr4.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/sysbr4.png)
 
 以下代码需要加在AndroidManifest.xml
 ```xml
@@ -45,22 +42,21 @@ Broadcast Receiver
 #### 静态注册实现开机启动
 
 **动态注册的不足**
-<img src="android-broadcast/weakd.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/weakd.png)
 比如说需要实现开机启动就没办法了
 
 **新建一个BroadcastReceiver**
-<img src="android-broadcast/newbr.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/newbr.png)
 
 **在AndroidManifest.xml注册**
-<img src="android-broadcast/newbrregi.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/newbrregi.png)
 在AndroidManifest.xml中添加权限
 ```xml
 <use-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 ```
 Android系统启动完成后会发出一条值为android.intent.action.BOOT_COMPLETED的广播，我们需要在receiver中用intent-filter来监听这条广播
 
-<img src="android-broadcast/recefilter.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/recefilter.png)
 
 ### 发送广播
 
@@ -129,18 +125,18 @@ sendOrderedBroadcast(intent,null);
 这个时候广播接收器有先后顺序的，而且前面的广播接收器可以将广播截断，阻止他继续传播
 
 **设定广播接收器优先级**
-<img src="android-broadcast/brpri.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/brpri.png)
 
 **截断广播**
-<img src="android-broadcast/brabort.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/brabort.png)
 
 ### 本地广播
 简介
-<img src="android-broadcast/localbrintro.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/localbrintro.png)
 
 例子
-<img src="android-broadcast/localbrexample.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/localbrexample.png)
 
 以上例子的解释
 
-<img src="android-broadcast/brexampleintro.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-broadcast/brexampleintro.png)

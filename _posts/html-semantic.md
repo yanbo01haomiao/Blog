@@ -7,6 +7,7 @@ tags:
 categories:
     - HTML
 ---
+
 语义化，指对文本内容的结构化（内容语义化），选择合乎语义的标签（代码语义化），便于开发者阅读，维护和写出更优雅的代码的同时，让浏览器的爬虫和辅助技术更好的解析（帮助机器读懂web内容）。
 <!--more-->
 ## 代码相关
@@ -97,8 +98,7 @@ categories:
 </html>
 ```
 以上代码对应以下网站
-<img src='html-semantic/semantic-web.png' width="100%">
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/html-semantic/semantic-web.png)
 **以上代码与具体网站的对应直观地展示了一部分HTML5新标签的语义**
 
 ## 语义化的重点

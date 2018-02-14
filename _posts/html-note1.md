@@ -24,5 +24,4 @@ categories:
 ```
 ### MDN上的教程
 [打开MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)
-### 一些博客链接
-1. {% post_link html-doctype 关于DOCTYPE文档模式 %}
+

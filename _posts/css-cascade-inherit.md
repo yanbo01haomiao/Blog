@@ -42,8 +42,7 @@ CSS 是 Cascading Style Sheets 的缩写，这暗示层叠（cascade）的概念
 
 *通用选择器 (*), 复合选择器 (+, >, ~, ' ') 和否定伪类 (:not) 在专用性中无影响。*
 
-<img src="css-cascade-inherit/zhuanyong.png" width="100%">
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-cascade-inherit/zhuanyong.png)
 ### 源代码次序
 如上所述，如果多个相互竞争的选择器**具有相同的重要性和专用性**，那么第三个因素将帮助决定哪一个规则获胜——后面的规则将战胜先前的规则。
 ```css
@@ -104,12 +103,11 @@ body {
 }
 ```
 结果如下：
-<img src="css-cascade-inherit/lizi.png" width="100%">
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-cascade-inherit/lizi.png)
 解释如下:
 
 > 1. 我们首先设置`<body>` 的color为绿色。
-2. 由于color属性是自然继承的，所有的body子元素都会有相同的绿色。需要注意的是默认情况下浏览器设置链接的颜色为蓝色，而不是自然继承color属性，因此在我们列表中的第一个链接是蓝色的。
-3. 第二个规则设置一个类 inherit 的元素内的链接，并从父类继承它的颜色。在这种情况下, 意思是说链接继承了父元素`<li>`的颜色，默认情况下`<li>`的颜色来自于它的父元素 `<ul>` , 最后`<ul>` 继承自 `<body>`元素，而`<body>`的color 根据第一条规则设置成了绿色。
-4. 第三个规则选择了在元素上使用类 initial 的任意链接然后设置他们的颜色为 initial 。通常， initial 的值被浏览器设置成了黑色，因此该链接被设置成了黑色。
-5. 最后一个规则选择了在元素上使用类 unset 的所有链接然后设置它们的颜色为 unset  ——即我们不设置值。因为color属性是一个自然继承的属性，它实际上就像把值设置成 inherit 一样。结果是，该链接被设置成了与body一样的颜色——绿色。
+> 2. 由于color属性是自然继承的，所有的body子元素都会有相同的绿色。需要注意的是默认情况下浏览器设置链接的颜色为蓝色，而不是自然继承color属性，因此在我们列表中的第一个链接是蓝色的。
+> 3. 第二个规则设置一个类 inherit 的元素内的链接，并从父类继承它的颜色。在这种情况下, 意思是说链接继承了父元素`<li>`的颜色，默认情况下`<li>`的颜色来自于它的父元素 `<ul>` , 最后`<ul>` 继承自 `<body>`元素，而`<body>`的color 根据第一条规则设置成了绿色。
+>4. 第三个规则选择了在元素上使用类 initial 的任意链接然后设置他们的颜色为 initial 。通常， initial 的值被浏览器设置成了黑色，因此该链接被设置成了黑色。
+>5. 最后一个规则选择了在元素上使用类 unset 的所有链接然后设置它们的颜色为 unset  ——即我们不设置值。因为color属性是一个自然继承的属性，它实际上就像把值设置成 inherit 一样。结果是，该链接被设置成了与body一样的颜色——绿色。

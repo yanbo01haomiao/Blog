@@ -72,8 +72,7 @@ div:nth-of-type(3) {
 }
 /* 我们设置了列的宽度以便它们都能匹配——36% + 30% + 4% + 26% = 96%，在第二和第三列之间留下一个4%的余数。 */
 ```
-<img src="css-layout2/3column.png" width="100%">
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout2/3column.png)
 ### 清除浮动的规则
 
 **对于CSS的清除浮动(clear)，一定要牢记：这个规则只能影响使用清除的元素本身，不能影响其他元素。**
@@ -103,7 +102,7 @@ footer{
   border: 3px dotted red;
 }
 ```
-<img src="css-layout2/beforeclear.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout2/beforeclear.png)
 添加了清除浮动的代码
 ```css
 footer{
@@ -112,7 +111,7 @@ footer{
 }
 
 ```
-<img src="css-layout2/clear.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout2/clear.png)
 接下去我们想让这个footer往上推开一个上外边距，我们设置
 ```css
 footer{
@@ -145,7 +144,7 @@ footer{
 
 使用绝对定位的效果不如浮动
 
-<img src="css-layout2/floatdemo.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout2/floatdemo.png)
 
 #### 参考资料
 [CSS浮动通俗讲解 by杨元](https://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html)

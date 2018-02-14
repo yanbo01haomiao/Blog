@@ -6,6 +6,7 @@ tags:
 categories:
     - CSS
 ---
+
 Normal FLow(文档流、普通流)是指在不对页面进行任何布局控制时，浏览器默认的HTML布局方式。我们讨论CSS布局就从文档流开始。
 
 <!--more-->
@@ -51,7 +52,7 @@ html的标签有块级元素(常见的html标签中如 div, form, ul, li, p, h1)
 }
 ```
 以上元素都置于普通流的布局时效果如下
-<img src="css-layout1/normal.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout1/normal.png)
 ### 脱离文档流的浮动框
 
 更改css代码
@@ -72,7 +73,7 @@ p{
 }
 ```
 效果如下
-<img src="css-layout1/float.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout1/float.png)
 我们可以看到，现在#outofnormal这个div脱离文档流了，所以后面那些还在文档流的元素无视了#outofnormal这个div浮动框。填满了他原先占有的位置。然而。我们发现标题Normal Content,以及p标签的文字依然意识到了浮动框的存在，并自己向右空出了浮动框的位置。（有人称作是float元素脱离了文档流，但不脱离文本流。）
 
 ### 脱离文档流的绝对定位
@@ -84,7 +85,7 @@ p{
 }
 ```
 效果如下
-<img src="css-layout1/absolute.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout1/absolute.png)
 
 嗯。。这下完全脱离文档流了
 

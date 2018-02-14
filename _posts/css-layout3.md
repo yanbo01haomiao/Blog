@@ -6,6 +6,7 @@ tags:
 categories:
     - CSS
 ---
+
 定位允许您从正常的文档流布局中取出元素，并使它们具有不同的行为，例如放在另一个元素的上面，或者始终保持在浏览器视窗内的同一位置
 
 <!--more-->
@@ -51,7 +52,7 @@ span {
   border: 1px solid black;
 }
 ```
-<img src="css-layout3/normal.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout3/normal.png)
 ### 静态定位static
 ```css
 .positioned{
@@ -69,7 +70,7 @@ span {
     left: 30px;
 }
 ```
-<img src="css-layout3/relative.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout3/relative.png)
 发现div相对自己原来的位置偏移了，往右往下各30px。同时原来占据的空间没有被其他元素占据。relative是不脱离文档流的。
 
 ### 绝对定位absolute
@@ -81,7 +82,7 @@ span {
     left: 30px;
 }
 ```
-<img src="css-layout3/absolute.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout3/absolute.png)
 
 可以看到他相对于html元素离压面的边缘的顶部和左侧都相距30px。并且脱离了文档流。原来占据的空间被其他还在文档流的元素占据了。
 
@@ -95,7 +96,7 @@ body{
 }
 ```
 这下我们的positioned这个div由相对html改为相对body定位了
-<img src="css-layout3/absolute1.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-layout3/absolute1.png)
 
 **绝对定位相对于其自身元素的(第一个被positioned，且positon不能为static的)祖先元素定位**
 

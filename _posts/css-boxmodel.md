@@ -15,7 +15,7 @@ categories:
 
 文档的每个元素被构造成文档布局内的一个矩形框，框每层的大小都可以使用一些特定的CSS属性调整。相关属性如下:
 
-<img src="css-boxmodel/boxmodel.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-boxmodel/boxmodel.png)
 
 *还有其他属性可以更巧妙地处理内容的大小——设置大小约束而不是绝对的大小。这些属性包括min-width、max-width、min-height 和 max-height。*
 
@@ -37,7 +37,7 @@ div{
 box-sizing: content-box;(默认值：框的宽度和高度等于通过CSS设置在 content 的宽度和高度)
 box-sizing: border-box;（框的宽度和高度等于content + padding + border）
 ```
-<img src="css-boxmodel/boxsizing.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-boxmodel/boxsizing.png)
 
 #### display
 HTML标签有块级元素和行内元素之分。其实可以理解为默认有display:block,display:inline之分,可以通过修改display属性来切换块级元素和行内元素。
@@ -50,7 +50,7 @@ HTML标签有块级元素和行内元素之分。其实可以理解为默认有d
 - display:flex可以启用flexbox布局
 来个直观的例子吧
 
-<img src="css-boxmodel/display.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-boxmodel/display.png" )
 ```html
 <p>
    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -138,7 +138,7 @@ p {
 .default    { overflow: visible; }
 ```
 效果如下...感觉不需要解释了
-<img src="css-boxmodel/overflow.png" width="100%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-boxmodel/overflow.png)
 
 #### background-clip
 框的背景是由颜色和图片组成的，它们堆叠在一起（background-color, background-image）。 它们被应用到一个盒子里，然后被画在盒子的下面。默认情况下，背景延伸到了边界外沿。这通常是OK的，但是在一些情况下比较讨厌（假使你有一个平铺的背景图，你只想要它延伸到内容的边沿会怎么做？），该行为可以通过设置盒子的background-clip属性来调整。
@@ -165,7 +165,7 @@ div {
 .padding-box { background-clip: padding-box; }
 .content-box { background-clip: content-box; }
 ```
-<img src="css-boxmodel/clip.png" width="30%">
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-boxmodel/clip.png)
 
 
 #### 参考资料

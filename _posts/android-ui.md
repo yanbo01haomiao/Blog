@@ -6,13 +6,11 @@ tags:
 categories:
     - Android
 ---
-
 安卓一些常见的基本控件介绍，以及安卓四大布局的介绍。安卓几种Menu的介绍。安卓如何自定义控件
 
 <!--more-->
 ### 布局和控件继承关系图
-<img src="android-ui/viewtree.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-ui/viewtree.png)
 ### 安卓常见的控件
 - TextView
 - Button
@@ -167,7 +165,7 @@ android:layout_height="match_parent">
 </LinearLayout>
 ```
 以上代码的效果如图
-<img src="android-ui/linearlayoutResult.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-ui/linearlayoutResult.png)
 
 另一个重要属性android:layout_weight
 ```xml
@@ -189,7 +187,7 @@ android:layout_height="match_parent">
 </LinearLayout>
 ```
 以上代码效果如图
-<img src="android-ui/linearlayoutResult2.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-ui/linearlayoutResult2.png)
 
 **使用了android:layout_weight之后控件的宽度不再由android:layout_width决定**
 
@@ -228,7 +226,7 @@ android:layout_height="match_parent">
 </FrameLayout>
 ```
 以上代码效果如图
-<img src="android-ui/framelayoutResult.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-ui/framelayoutResult.png)
 
 ### 百分比布局
 ...有点麻烦不想写了

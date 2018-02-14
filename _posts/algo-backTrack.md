@@ -27,7 +27,7 @@ categories:
 ### 两种类型的解空间树
 #### 子集树   
 2^n个叶结点  01背包问题
-<img src="algo-backTrack/zijitree.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/algo-backTrack/zijitree.png)
 
 **搜索子集树的一般算法**
 （完全n叉树属于子集树）
@@ -51,7 +51,7 @@ void backtrack( int t)
 ```
 #### 排列树  
 n!个叶结点   TSP旅行商问题
-<img src="algo-backTrack/pailietree.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/algo-backTrack/pailietree.png)
 **搜索排列树的一般算法**
 ```cpp
 //n是问题的规模
@@ -89,5 +89,5 @@ void backtrack( int t)
 优先队列式分支限界法，将活结点表组织成一个优先队列，并按优先队列中规定的结点优先级，选取剩余队列中优先级最高的下一个结点作为当前扩展结点；
 
 #### 和回溯法的异同
-<img src="algo-backTrack/yitong1.png" width="100%"/>
-<img src="algo-backTrack/yitong2.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/algo-backTrack/yitong1.png)
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/algo-backTrack/yitong2.png)

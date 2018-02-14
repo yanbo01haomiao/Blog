@@ -6,7 +6,6 @@ tags:
 categories:
     - Android
 ---
-
 服务的运行不依赖于任何用户界面，即使程序被切换到后台，或者用户打开了另一个应用程序，服务仍然能够保持正常运行
 
 尽管如此，服务并不是运行在一个独立的进程当中的，而是依赖于创建服务时所在的应用程序进程。当某个应用程序进程被杀掉时，所有依赖于该进程的服务也会停止运行
@@ -43,7 +42,7 @@ public class MyService extends Service {
 }
 ```
 Service一些重载方法的作用
-<img src="android-service/serviceClass.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-service/serviceClass.png)
 
 **注意Service作为四大组件之一所以也需要在AndroidManifest.xml中注册**
 
@@ -140,18 +139,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 }
 ```
 **Acticity以上代码的解释**
-<img src="android-service/activityService.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/activityService.png)
 
 **Activity的bindService()和unbindService()**
-<img src="android-service/bindunbind.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-service/bindunbind.png)
 **服务可以和多个Activity绑定**
 
 另外需要注意，任何一个服务在整个应用程序范围内都是通用的，即MyService不仅可以和MainActivity绑定，还可以和任何其他的活动进行绑定，而且绑定后他们都可以获取到相同的DownloadBinder实例
 
 ### 服务的生命周期
-<img src="android-service/lifecycle.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-service/lifecycle.png)
 **使用前台服务**
 ...这部分先省略
 
@@ -198,18 +195,16 @@ public class MyIntentService extends IntentService{
 }
 ```
 MyIntentService里的代码解释
-<img src="android-service/intentService.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-service/intentService.png)
 #### 混合使用
 混合使用startService()stopService()和bindService()unbindService()
 两组方法
 
 一个具体解释
-<img src="android-service/mix.png" width="100%"/>
-
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-service/mix.png)
 #### 安卓的系统服务
 所有系统服务
-<img src="android-service/sysService.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-service/sysService.png)
 
 所有系统服务，都可以通过getSystemService函数获得
 
@@ -222,7 +217,8 @@ t.getSimState();//获得sim卡状态
 ...
 ```
 **一个监听通话状态的例子**
-<img src="android-service/phonestate.png" width="100%"/>
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/android-service/phonestate.png")
+
 使用系统服务需要在AndroidManifest.xml中添加对相应服务的访问权限
 ```xml
 <use-permisson android:name="android.permisson.READ_PHONE_STATE"/>

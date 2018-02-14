@@ -13,7 +13,7 @@ categories:
 <!--more-->
 
 在 Vue 中，父子组件的关系可以总结为 prop 向下传递，事件向上传递。父组件通过 prop 给子组件下发数据，子组件通过事件给父组件发送消息。先来张直观的图。
-<img src="passemit.png" width="100%" >
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/vue-components/passemit.png)
 
 ## Pass Props
 
