@@ -45,7 +45,9 @@ JavaScript在ES5以前是没有模块化机制的。这也就是他没有像C/C+
 本文不讨论webpack怎么配置怎么使用，关注点在于我们为什么要多此一举使用webpack，直接编辑器写完保存，浏览器打开不好吗以及webpack到底在背后为我们做了什么?
 
 首先，我们可以认为目前大多数浏览器只能直接运行html、css、JavaScript(ES5)。引用美团点评的技术文章中的一句话
+
 > 鼓励将JavaScript、CSS、HTML视为前端领域的“汇编”。
+
 我们可以当作浏览器只能运行html、css、JavaScript这样的“机器语言”。
 
 显然直接用机器语言来开发程序的开发效率是极其低下的。同时html、css、JavaScript存在许多设计上的缺陷。所以我们需要一些“高级语言”来开发，类似jade、stylus、typescript就是这样的高级语言。高级语言写完代码之后，显然我们要把他们编译成html、css、JavaScript这样的机器语言才能供浏览器运行。
