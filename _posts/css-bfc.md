@@ -19,6 +19,8 @@
 ```
 一个元素的布局上下文就是该元素的包含块，它由离该元素最近的块级元素担任。上面的p元素的布局上下文就是div。这时候div就可以看成一个普通容器，p元素在这个容器里(盒模型的content)，同时div又在一个由根元素触发的BFC容器里。
 
+*如果该元素是position:abosulte定位的元素，则它的布局上下文即包含块，则是向上找positioned(position值非static)的块级元素，该块级元素则是该元素的容器/定位原点。*
+
 我们可以从[MDN BFC](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)上了解到哪些情况可以触发BFC。其中常见包括如下：
 - 根元素或其它包含它的元素
 - 浮动元素 (元素的 float 不是 none)
