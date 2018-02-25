@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 动画</title>
+    <!-- <link rel="stylesheet" href="demo.css"> -->
+    <style>
+        @-webkit-keyframes mya {
+            50% {
+                background: rgb(175, 29, 29);
+            }
+            to {
+                background: rgb(65, 167, 61);
+                transform: rotate(30deg);
+            }
+        }
+        @keyframes mya {
+            50% {
+                background: rgb(175, 29, 29);
+            }
+            to {
+                background: rgb(65, 167, 61);
+                transform: rotate(30deg);
+            }
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background: rgb(75, 110, 155);
+        }
+        .box1:hover{
+            transform: rotate(30deg);
+        }
+        .run1{
+            transition: all 3s;
+        }
+        .run2{
+            -webkit-animation: mya 3s ease 0.5s infinite;
+            animation: mya 3s ease 0.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS动画</h1>
+    <h2>transform demo（鼠标移动到方块上）</h2>
+    <div class="box box1">
+        瞬间变换
+        transform: rotate(30deg);
+    </div>
+    <h2>transition demo（鼠标移动到方块上）</h2>
+    <div class="box box1 run1">
+        持续变换
+        transform: rotate(30deg);
+        transition: all 3s;
+    </div>
+    <h2>animation demo （加载完后自动触发）</h2>
+    <div class="box run2">
+        自动触发、三个状态、无限动画
+        animation: myanimation 3s ease 0.5s infinite;
+    </div>
+</body>
+</html>
