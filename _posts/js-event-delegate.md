@@ -15,7 +15,7 @@ document.getElementById('a').onclick = handler
 
 **以下是冒泡流示例**
 
-![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/js-event-delegate/catch-buble.jpg)
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/js-event-delegate/abcd.png)
 
 ```js
 function handler (e) {
