@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS实现的滑动开关</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .onoffswitch {
+            margin: 0 auto;
+            position: relative;
+            width: 7rem;
+            height: 3rem;
+            overflow: hidden;
+            border-radius: 5rem;
+        }
+        .onoffswitch-checkbox {
+            display: none;
+        }
+        .onoffswitch-inner {
+            display: block;
+            width: 200%;
+            margin-left: -100%;
+            transition: all 0.3s ease-in 0s; 
+        }
+        .onoffswitch-inner::before, .onoffswitch-inner::after {
+            display: block;
+            float: left;
+            line-height: 3rem;
+            text-align: center;
+            width: 50%;
+        }
+        .onoffswitch-inner::before {
+            content: 'ON';
+            background-color: #34A7C1;
+        }
+        .onoffswitch-inner::after {
+            content: 'OFF';
+            background-color: #EEEEEE;
+        }
+        .onoffswitch-switch {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 4.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: auto;
+            background: white;
+            border: 2px solid #999999;
+            border-radius: 50%;
+            transition: all 0.3s ease-in 0s; 
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+            margin-left: 0;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+            right: 1rem;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>使用纯CSS实现的滑动开关</h1>
+    <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+</body>
+</html>
