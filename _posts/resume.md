@@ -11,7 +11,10 @@
  - 邮箱：caistrong@outlook.com
  - github：https://github.com/caistrong
  - 技术博客：https://github.com/caistrong/Blog
-   
+
+## 实习经历
+ - 2018-03-05 - 至今 美团点评  前端工程师(实习)
+
 ## 技能
  - HTML
    - 熟悉常用的HTML标签
@@ -26,7 +29,8 @@
   - 熟悉基本的JavaScript DOM操作。
   - 熟悉一些ES6相关知识，包括但不限于let,ES6 Module，Promise，箭头函数，Set和Map数据结构，asyn语法糖等。
 - 其他
-  - 熟悉vue框架，包括vue-router,vuex全家桶，并使用vue开发过单页应用，了解webpack的一些基本的配置 
+  - 熟悉vue框架，包括vue-router,vuex全家桶，并使用vue开发过单页应用，了解webpack的一些基本的配置
+  - 熟悉react和redux 
   - 了解一点HTTP基础知识，动词，常见响应状态码，http缓存等知识
   - 了解Node，能用Express和koa来做一些小的项目，实现简单的Restful API等。
   - 了解Java Web开发，使用过SpringBoot开发过一个翻转课堂管理系统的后台
