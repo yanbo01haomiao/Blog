@@ -64,7 +64,7 @@
 发现我们的劫持行动失败了
 
 我们新建标签页打开 https://github.com/caistrong 这个网址，再次查看请求html的Response Headers
-![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/clickjacking/github-response-headers.png)
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/clickjacking/github-response-headers.jpg)
 
 我们发现一个与贴吧的Response Headers不同的地方
 ```bash
