@@ -54,7 +54,7 @@
 解析的过程还可能会遇到`<img>`图片资源或者其他外部资源，据悉，这些其他资源既不阻塞html解析，也不阻塞js执行
 
 关于这一点，我也通过访问github官网做了一个实验，结果如下：
-![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/browser-render/githubnetwork.png)
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/browser-render/githubperformance.png)
 
 其中蓝色条的Parse HTML代表的就是html文件解析的过程，我们可以发现中间穿插着Evaluate Script（执行js），直到一条蓝色竖线切断时，即DOMContentLoad事件触发时才表示html文档解析完毕，这个时候我们从上栏蓝竖线后的小图里看到，我们的用户已经能看到最终的页面了，这就表示paint已经完成了
 
