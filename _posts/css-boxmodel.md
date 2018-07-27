@@ -50,7 +50,7 @@ HTML标签有块级元素和行内元素之分。其实可以理解为默认有d
 - display:flex可以启用flexbox布局
 来个直观的例子吧
 
-![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-boxmodel/display.png" )
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/css-boxmodel/display.png)
 ```html
 <p>
    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
