@@ -6,7 +6,7 @@
 
 AES是一种较为常见的对称加密算法,加密和解密使用相同的密钥,具体的加解密流程如下图
 
-![](./crypto/aes.png)
+![](https://raw.githubusercontent.com/caistrong/Blog/master/_posts/crypto/aes.png)
 
 - 加密(Encrypt)的过程可以抽象为C = E(K,P) 即把密钥K和明文P作为参数传入加密函数E,输出密文C
 - 解密(Decrypt)的过程可以抽象为P = D(K,C) 即把密钥K和密文C作为参数传入解密函数D,输出明文P
