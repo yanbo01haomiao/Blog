@@ -7,7 +7,7 @@
 1. 从王健林的账户里扣除1个亿
 2. 给我的账户里增加1个亿
 
-这两个步骤应该视为一个整体，要么就是执行成功(commit)，要么就是执行失败(rollback)回滚到事务尚未开始前的状态。
+这两个步骤应该视为一个整体，要么就是执行成功(commit)，要么就是执行失败(rollback)回滚到事务尚未开始前的状态。也就是不允许只扣了王健林1亿，却不给我的账户增加1亿这种情况的发生。
 
 [了解更多参考维基百科Database transaction](https://en.wikipedia.org/wiki/Database_transaction)
 
