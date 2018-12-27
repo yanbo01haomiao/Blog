@@ -74,21 +74,24 @@ async payBill(params) {
             where: { 
                 billId: params.billId 
             }
-        }, transaction: t ) //step1: 修改订单状态
+            transaction: t
+        }) //step1: 修改订单状态
         await book_inventory_model.update({
             inventory: Sequelize.literal(`inventory - ${params.numCount}`)
         }, { 
             where: {
                 bookId: { [Op.in]: params.bookIds }
             }
-        }, transaction: t ) //step2: 库存更新
+            transaction: t 
+        }) //step2: 库存更新
         await user_account_model.update({
             balance: Sequelize.literal(`balance - ${params.totalPay}`)
         }, {
             where: {
                 userId: params.userId
             }
-        }, transaction: t) //step3: 更新客户钱包余额
+            transaction: t 
+        }) //step3: 更新客户钱包余额
         
         await t.commit()
         return {code: 200, msg: '支付成功'}
