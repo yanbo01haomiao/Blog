@@ -73,7 +73,7 @@ async payBill(params) {
         }, {
             where: { 
                 billId: params.billId 
-            }
+            },
             transaction: t
         }) //step1: 修改订单状态
         await book_inventory_model.update({
@@ -81,7 +81,7 @@ async payBill(params) {
         }, { 
             where: {
                 bookId: { [Op.in]: params.bookIds }
-            }
+            },
             transaction: t 
         }) //step2: 库存更新
         await user_account_model.update({
@@ -89,7 +89,7 @@ async payBill(params) {
         }, {
             where: {
                 userId: params.userId
-            }
+            },
             transaction: t 
         }) //step3: 更新客户钱包余额
         
